@@ -27,26 +27,39 @@ const invia = document.getElementById('clientData');
 
         if(sconto == 'anziano') {
 
-            prezzoFinale = ( prezzo * 0.6 );
+            prezzoFinale = ( prezzo * 0.6);
 
             
         }
 
+        prezzoFinale = prezzo.toFixed(2);
+
          document.getElementById('namp').innerHTML = nome.value;
          document.getElementById('off_n').innerHTML = sconto;
-         document.getElementById('carr_n').innerHTML = 
-         document.getElementById('cod_cp').innerHTML = 
-         document.getElementById('tkt_p').innerHTML = prezzoFinale;
+         document.getElementById('carr_n').innerHTML =  Math.floor(Math.random() * 20 + 1);
+         document.getElementById('cod_cp').innerHTML = Math.floor(Math.random() * 9999 + 90000 );
+         document.getElementById('tkt_p').innerHTML = prezzoFinale + '€';
+
+
+            let bigliettoGenerato = document.getElementById('ticket');
+            bigliettoGenerato.style.display = 'block';
+
+
   
-
-        alert('i tuoi valori sono' + distanza + ' ' + nome.value + ' ' + sconto + prezzoFinale );
-        // alert(`I valori inseriti sono: ${nome.value} ${distanza.value}Km ${sconto.value}`);
-
         
+            
+        // alert(`I valori inseriti sono: ${nome.value} ${distanza.value}Km ${sconto.value}`);
     }
 
-
 );
+
+const annulla = document.getElementById('delete');
+bigliettoGenerato = document.getElementById('ticket');
+            
+annulla.addEventListener('click', 
+function(){ bigliettoGenerato.style.display = 'none'; } );
+    
+
 
 
 

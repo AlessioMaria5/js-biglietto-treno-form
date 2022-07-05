@@ -1,0 +1,38 @@
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#ticket {
+
+    text-align: center;
+    width: 50%;
+    margin: auto;
+}
+
+.tkt {
+
+    display: flex;
+    justify-content: space-between;
+ 
+    gap: 25px;
+    padding: 15px;
+    height: 250px;
+}
+
+.inner h3 {
+
+    margin-bottom: 50px;
+}
+
+.dt-psg h2 {
+
+    text-align: start;
+}
+
+.dt-psg {
+
+    background-color: rgb(191, 99, 99);
+}

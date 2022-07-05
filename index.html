@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biglietto Treno</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <form action="send">
+        <label for="nome">Nome e Cognome</label>
+        <input type="text" id="nome">
+        <label for="km">Km da Percorrere</label>
+        <input type="text" id="km">
+        
+        <select id="listaSconto">
+            <option value="minorenne">Meno di 18 anni</option>
+            <option value="maggiorenne">Più di 18 anni</option>
+            <option value="anziano">Più di 65 anni</option>
+        </select>
+        <input type="button" value="send" id="clientData">
+    </form>
+
+    
+    
+
+    <script type='text/javascript' src="js/main.js"></script>
+</body>
+</html>

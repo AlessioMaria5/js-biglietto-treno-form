@@ -51,9 +51,10 @@ main {
     padding: 50px;
     position: relative;
     z-index: 2;
+    background-color: #272adacc;
 }
 
-main:after {
+/* main:after {
 
     content: '';
     background-image: url('https://images.pexels.com/photos/618833/pexels-photo-618833.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
@@ -66,7 +67,7 @@ main:after {
     right: 0;
     position: absolute;
     z-index: -1;
-}
+} */
 
 main hgroup:first-child {
 

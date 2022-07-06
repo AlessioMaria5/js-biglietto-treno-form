@@ -10,7 +10,10 @@
 :root {
 
     --primaryColor: #F0F2F2;
+    --secondaryColor: #00a084;
 }
+
+/* ------------- HEADER ---------- */
 
 header {
 
@@ -23,8 +26,8 @@ header h1 {
 
     font-size: 50px;
     color: rgb(173, 173, 173);
-    border-bottom: #00A084 2px solid;
-    border-top: #00A084 5px double;
+    border-bottom: var(--secondaryColor) 2px solid;
+    border-top: var(--secondaryColor) 5px double;
     width: 80%;
     margin: auto;
     margin-top: 10px;
@@ -35,13 +38,18 @@ header h1 {
 
 .title-h {
 
-    color: #00A084;
+    color: var(--secondaryColor);
 }
 
 .title-end {
 
     color: rgb(86, 140, 181);
 }
+
+/* ------------- fine HEADER ---------- */
+
+/* ------------- MAIN ---------- */
+
 main {
 
     
@@ -82,7 +90,6 @@ hgroup h1 {
     margin-bottom: 10px;
 }
 
-
 .container {
 
     width: 50%;
@@ -91,6 +98,8 @@ hgroup h1 {
     justify-content: center;
     gap: 0px;
 }
+
+/* ------------- FORM TICKET ---------- */
 
 #ticket {
 
@@ -106,7 +115,6 @@ hgroup h1 {
 }
 
 
-/* TICKET FORM TICKET FORM TICKET FORM TICKET FORM TICKET FORM */
 
 .tckt-form {
 
@@ -142,7 +150,7 @@ hgroup h1 {
     border:none;
     width: 100%;
     margin-bottom: 10px;
-    position: relative;
+
 }
 
 .inp-primary input {
@@ -152,7 +160,7 @@ hgroup h1 {
     border-radius: 5px;
     width: 100%;
     padding-left: 50px;
-    position: relative;
+ 
     
 }
 
@@ -160,7 +168,7 @@ hgroup h1 {
 
     content: ' \2713';
     position: absolute;
-    background-color: #00A084;
+    background-color: var(--secondaryColor);
     width: 25px;
     height: 25px;
     border-radius: 50%;
@@ -200,8 +208,6 @@ hgroup h1 {
     margin: auto;
 }
 
-/* TICKET FORM TICKET FORM TICKET FORM TICKET FORM TICKET FORM */
-
 .btn-tp {
 
     border: none;
@@ -209,12 +215,13 @@ hgroup h1 {
     color: white;
     font-weight: bold;
     font-size: 15px;
-    background-color: #00A084;
+    background-color: var(--secondaryColor);
     margin-bottom: 10px;
 }
 
+/* ------------- fine FORM TICKET ---------- */
 
-/* FINAL TICKET FINAL TICKET FINAL TICKET FINAL TICKET FINAL TICKET */
+/* ------------- FINAL TICKET ---------- */
 
 #tkt {
 
@@ -246,16 +253,16 @@ hgroup h1 {
 }
 .inner span {
 
-    background-color: #00A084;
+    background-color: var(--secondaryColor);
     color: white;
-    padding: 2px 25px;
+    padding: 6px 25px;
     border-radius: 10px;
 }
 
 #ticket .fa-solid {
 
     display: inline;
-    color: #00A084;
+    color: var(--secondaryColor);
 }
 
 .inner-b i {
@@ -273,7 +280,7 @@ hgroup h1 {
 
     text-align:center;
     font-size: 15px;
-    color: #00A084;
+    color: var(--secondaryColor);
     vertical-align: start;
 
 }
@@ -282,6 +289,7 @@ hgroup h1 {
 
     border-radius: 5px;
     background-color: rgb(234, 202, 43);
+    font-weight: 900;
 }
 
 #success2 {
@@ -289,19 +297,41 @@ hgroup h1 {
     display: none;
     text-align: center;
     margin-top: 50px;
-    color: #00A084;
+    color: var(--secondaryColor);
     font-size: 20px;
     width: 50%;
     margin: auto;
-    border: #00A084 2px solid;
+    border: var(--secondaryColor) 2px solid;
     border-radius: 10px;
     padding: 10px;
     background-color: rgba(29, 222, 199, 0.1);
 }
 
-/* FINAL TICKET FINAL TICKET FINAL TICKET */
+/* ------------- fine FINAL TICKET ---------- */
 
-/* ANIMATION ANIMATION ANIMATION */
+/* ------------- fine MAIN ---------- */
+
+
+/* ------------- FOOTER ---------- */
+
+footer {
+
+    background-color: rgba(0,0,0,0.8);
+    color: white;
+    text-align: center;
+
+    padding: 50px;
+    line-height: 25px;
+}
+
+a:link , a:visited {
+
+    color: var(--secondaryColor);
+}
+
+/* ------------- fine FOOTER ---------- */
+
+/* ------------- ANIMATION ---------- */
 
 .animation {
 
@@ -311,6 +341,11 @@ hgroup h1 {
 @keyframes allungamento {
 
     0% {
+
+        max-height: 446px;
+    }
+
+    25% {
 
         max-height: 120px;
     }
@@ -322,6 +357,10 @@ hgroup h1 {
     }
     
 }
+
+/* ------------- fine ANIMATION ---------- */
+
+/* ------------- RESPONSIVE ---------- */
 
 @media all and (max-width: 789px ) {
 
@@ -352,17 +391,4 @@ hgroup h1 {
     }
 }
 
-footer {
-
-    background-color: rgba(0,0,0,0.8);
-    color: white;
-    text-align: center;
-
-    padding: 50px;
-    line-height: 25px;
-}
-
-a:link , a:visited {
-
-    color: #00A084;
-}
+/* ------------- fine RESPONSIVE ---------- */

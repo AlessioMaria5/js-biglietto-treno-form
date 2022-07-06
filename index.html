@@ -6,36 +6,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Biglietto Treno</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
+    <header>
+        <h1><span class='title-h'>Boolean</span>-Line <span class='title-end'>Travel</span></h1>
+    </header>
+    <main>
 
-    <form action="send">
-        <label for="nome">Nome e Cognome</label>
-        <input type="text" id="nome">
-        <label for="km">Km da Percorrere</label>
-        <input type="number" id="km">
+        <hgroup>
+            <h1>Prenotare il treno è finalmente semplice</h1>
+            <h5>Compara tutte le soluzioni di viaggio e trova il biglietto perfetto per te.</h6>
+        </hgroup>
         
-        <select id="listaSconto">
-            <option value="minorenne">Meno di 18 anni</option>
-            <option value="maggiorenne">Più di 18 anni</option>
-            <option value="anziano">Più di 65 anni</option>
-        </select>
-        <input type="button" value="Genera" id="clientData">
-        <input type="button" value="Anulla" id="delete">
-    </form>
-
-
-    <section id="ticket">
-
-            <h1>Il Tuo Biglietto</h1>
-            <div class="dt-psg">
-
-                <h2>DETTAGLIO PASSEGGERI</h2>
-
-                <div class="tkt">
+        <div class="container">
+            
+            <form action="send" class="tckt-form tckt-d">
+           
+                <div class="inp-primary">
+                <input class="inp-size first"  type="text" id="nome" placeholder="il tuo Nome">
+                <hr>
+                <input class="inp-size first"  type="number" id="km" placeholder="Destinazione">
+                </div> 
+                
+                
+                <select class="inp-size inp-secondary" id="listaSconto">
+                    <option value="EndPlus">Edu Plus</option>
+                    <option value="Standard">Biglietto Standard</option>
+                    <option value="Over">Over 65</option>
+                </select>
+                <input class="inp-size btn-tp" type="button" value="Genera" id="clientData">
+                <input class="inp-size btn-tp" type="button" value="Annulla" id="delete">
+                <div id="success2"><p>Prenotazione effettuata con Successo!</p></div>
+            </form>
+        
+        
+            <section class="tckt-form" id="ticket">
+        
+                <div class="inner-b">
+                    <i class="fa-solid fa-ticket"></i>
+                    <h5>il tuo Biglietto</h5>
+                </div>
+                
+                <h2>Riepilogo</h2>
+        
+                <div id="tkt">
                     <div class="inner">
-                        <h3>NOME PASSEGGERO</h3>
-                        <span id="namp">NOME</span>
+                        <h3>Intestatario</h3>
+                        <span id="namp">il tuo nome</span>
                     </div>
                     <div class="inner">
                         <h3>Offerta</h3>
@@ -57,10 +75,10 @@
                         <span id="tkt_p">prezzo</span>
                     </div>
                 </div>
-            </div>
-        
-    </section>
-    
+            </section>
+        </div>  <!-- CONTAINER -->
+    </main>
+   
     
 
     <script type='text/javascript' src="js/main.js"></script>

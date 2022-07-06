@@ -58,7 +58,7 @@ main:after {
     content: '';
     background-image: url('https://images.pexels.com/photos/618833/pexels-photo-618833.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: fixed;
     opacity: 0.8;
     top: 0;
     bottom: 0;
@@ -222,7 +222,7 @@ hgroup h1 {
     flex-direction: column;
     padding: 15px;
     display: none;
-    overflow: hidden;
+    overflow:hidden;
 }
 
 .dt-psg {
@@ -279,8 +279,8 @@ hgroup h1 {
 
 #tkt_p {
 
-    border-radius: 2px;
-    background-color: red;
+    border-radius: 5px;
+    background-color: rgb(234, 202, 43);
 }
 
 #success2 {
@@ -311,8 +311,12 @@ hgroup h1 {
 
     0% {
 
-        max-height: 137.5px;
-        margin-left: 0px;
+        max-height: 350px;
+    }
+
+    25% {
+
+        max-height: 120px;
     }
 
     100% {
